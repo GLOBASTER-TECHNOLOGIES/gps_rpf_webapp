@@ -30,7 +30,7 @@ export default function Navbar() {
 
       {/* Navbar */}
 
-      <div className={`fixed top-3 left-7 z-[5000] scale-110 ${sidebarOpen ? "opacity-0 duration-200" : "opacity-100 duration-300"} transition-all ease-in-out`}>
+      <div className={`fixed sm:top-3 left-2 sm:left-7 z-[5000] scale-110 ${sidebarOpen ? "opacity-0 duration-200" : "opacity-100 duration-300"} transition-all ease-in-out`}>
         <div className="flex items-center gap-4 px-4 py-3">
           {/* Burger Menu */}
           <button
@@ -42,7 +42,7 @@ export default function Navbar() {
           </button>
 
           {/* Search Box */}
-          <div className="relative h-9 w-[26vw] max-w-[30vw] bg-white rounded-full border border-gray-300 flex items-center hover:scale-105 transition-all duration-100 ease-in-out">
+          <div className="relative h-9 w-[56vw] sm:max-w-[30vw] bg-white rounded-full border border-gray-300 flex items-center hover:scale-105 transition-all duration-100 ease-in-out">
             <FiSearch
               className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
               size={19}
