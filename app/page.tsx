@@ -1,8 +1,12 @@
 import React from 'react'
+import Map from './components/Map'
+
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Map />
+    </div>
   )
 }
 
