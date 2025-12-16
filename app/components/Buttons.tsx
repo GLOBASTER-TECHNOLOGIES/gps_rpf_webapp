@@ -22,14 +22,14 @@ export default function Buttons({
 }: ButtonsProps) {
     return (
         <div className="fixed text-black bottom-14 right-6 z-[9999] flex flex-col gap-2 pointer-events-auto">
-            <button onClick={onToggleTexture} className="rounded-full bg-white p-3 flex items-center justify-center">
+            <button onClick={onToggleTexture} className="rounded-full bg-white p-3 flex items-center justify-center shadow-[0_6px_18px_rgba(0,0,0,0.22)]">
                 {/* {isSatellite ? "Normal Map" : "Satellite"} */}
                 {isSatellite ? (<div><FaMapMarkedAlt size={25} /></div>) : <div><MdSatelliteAlt size={25} /></div>}
             </button>
-            <button onClick={onZoomIn} className="rounded-full bg-white p-3 flex items-center justify-center font-bold">
+            <button onClick={onZoomIn} className="rounded-full bg-white p-3 flex items-center justify-center font-bold shadow-[0_6px_18px_rgba(0,0,0,0.22)]">
                 < LuZoomIn size={20} />
             </button>
-            <button onClick={onZoomOut} className="rounded-full bg-white p-3 flex items-center justify-center font-bold">
+            <button onClick={onZoomOut} className="rounded-full bg-white p-3 flex items-center justify-center font-bold shadow-[0_6px_18px_rgba(0,0,0,0.22)]">
                 < LuZoomOut size={20} />
             </button>
         </div>
