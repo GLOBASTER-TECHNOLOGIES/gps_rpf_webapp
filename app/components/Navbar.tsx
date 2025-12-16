@@ -35,14 +35,14 @@ export default function Navbar() {
           {/* Burger Menu */}
           <button
             onClick={openSidebar}
-            className="bg-white text-gray-500 rounded-full p-2 hover:bg-gray-100 hover:scale-120 transition-all duration-100 ease-in-out border border-gray-300"
+            className="bg-white text-gray-500 rounded-full p-2 hover:bg-gray-100 hover:scale-120 transition-all duration-100 ease-in-out border border-gray-300 shadow-[0_6px_18px_rgba(0,0,0,0.22)]"
             aria-label="Menu"
           >
             <FiMenu size={19} />
           </button>
 
           {/* Search Box */}
-          <div className="relative h-9 w-[56vw] sm:max-w-[30vw] bg-white rounded-full border border-gray-300 flex items-center hover:scale-105 transition-all duration-100 ease-in-out">
+          <div className="relative h-9 w-[22vw] sm:max-w-[30vw] bg-white rounded-full border border-gray-300 flex items-center hover:scale-105 transition-all duration-100 ease-in-out">
             <FiSearch
               className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"
               size={19}
@@ -50,7 +50,7 @@ export default function Navbar() {
             <input
               type="text"
               placeholder="Enter kilometer…"
-              className="w-full text-black rounded-full py-2 pl-10 pr-4 text-sm outline-none"
+              className="w-full text-black rounded-full py-2 pl-10 pr-4 text-sm outline-none shadow-[0_6px_18px_rgba(0,0,0,0.22)]"
             />
           </div>
         </div>
